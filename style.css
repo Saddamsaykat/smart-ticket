@@ -90,3 +90,28 @@
     padding: 1%;
     border-radius: 10px;
 }
+
+/* section two */
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: #ffbf0f;
+    /* padding: 2%; */
+    border-radius: 15px;
+    /* height: 40%; */
+    max-width: 50%;
+}
+
+.cupon-devider {
+    /* position: relative;
+    right: 10%; */
+    height: 120px;
+}
+
+.offer-parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
