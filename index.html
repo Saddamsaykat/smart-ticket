@@ -21,7 +21,8 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -147,187 +148,210 @@
         <!-- section three bus ticket prize list -->
         <section class="section-three" id="bus-route">
             <div class="ticket-name">
-                <h1>Sohoz Ticket</h1>
+                <h1 class=" font-bold text-5xl mb-5">Sohoz Ticket</h1>
                 <p>From online booking systems to GPS tracking, the company prioritizes convenience and reliability.</p>
             </div>
-            <div class="full-ticket-service-div">
+
+            <div class=" flex justify-between items-center bg-gray-100 p-14 border-4 rounded-2xl">
+                <!-- detils div -->
                 <div>
-                    <div class="sets">
-                        <div class="busName">
-                            <div>
-                                <img src="./images/bus-logo.png">
-
-                            </div>
-
-                            <div>
-                                <h1>Greenline Paribahan</h1>
-                                <p>Coach-009-WEB! AC_Business</p>
-                            </div>
-                        </div>
-
+                    <div>
                         <div>
-                            <button class="sets-img">
-                                <img src="./images/seat-green-filled.png" alt=""><span>0 <span>Seats
-                                        left</span></span>
-                            </button>
+                            <div class=" flex justify-between items-center gap-64 ml-6">
+                                <div class=" flex gap-5">
+                                    <div>
+                                        <img src="./images/bus-logo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Sohoz Poribahan</h1>
+                                        <p>Coach-009-Web| Economy</p>
+
+                                    </div>
+
+                                </div>
+                                <div class=" flex">
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                    <h1>40 <span>Seets Left</span></h1>
+                                </div>
+                            </div>
+                            <div class=" bg-slate-200 rounded-xl p-7">
+                                <div>
+                                    <div class=" flex justify-between ml-6">
+                                        <h1>Route</h1>
+                                        <h1 class=" font-bold">Dhaka-Sylhet</h1>
+                                    </div>
+
+                                </div>
+                                <hr id="hr" class=" mt-4 mb-4">
+                                <div class=" flex justify-between ml-6">
+                                    <h1>Departure Time</h1>
+                                    <h1>9:00 PM</h1>
+                                </div>
+                                <hr id="hr" class=" mt-4 mb-4">
+                                <div class=" ml-24 gap-10">
+                                    <button class="btn btn-active w-60">Boarding Point - Laxmipur</button>
+                                    <button class="btn btn-active w-60">Dropping Point - Bogura</button>
+                                    <button class="btn btn-active w-60">Est. Time - 11 Hour</button>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
-                    <!-- route -->
-                    <div class="route-div">
-                        <div class="route">
-                            <h4>Route</h4>
-                            <h4>Dhaka-Sylhet</h4>
-                        </div>
-
-                        <div class="depratare">
-                            <h4>Departure Time</h4>
-                            <h4>9.00 PM</h4>
-                        </div>
-
-                        <hr>
-                        <div class="route-btn">
-                            <button>Boarding Point - Laxmipur</button>
-                            <button>Dropping Point - Bogura</button>
-                            <button>Est. Time - 11 Hour</button>
-                        </div>
-                    </div>
-
                 </div>
-                <hr>
+                <div>
+                    <img src="./images/info-devider.png" alt="">
+                </div>
+                <!-- taka 550 div -->
                 <div>
                     <img src="./images/fare.png" alt="">
-                    <h1>0 <span>Taka</span></h1>
-                    <p>Per Seat</p>
+                    <h1 class=" font-bold text-xl mr-8">550 Taka</h1>
+                    <h1>Per Sets</h1>
                 </div>
             </div>
+
         </section>
         <!-- seat plan -->
         <section id="buyTicketOnline">
-
-            <div class=" flex justify-between">
-                <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
-
-                <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
-
-
-            </div>
-            <hr>
-            <div class=" flex justify-between">
-                <div class=" flex">
-                    <img src="./images/seat-gray.png" alt=""><span class=" text-lg ">Available</span>
-                </div>
-                <div class=" flex">
-                    <img src="./images/seat-green-filled.png" alt=""><span
-                        class=" text-lg text-green-400">Selected</span>
-                </div>
-            </div>
-            <hr>
-            <div class="">
-
-                <div>
-                    <div class=" grid grid-cols-5 w-2/4 gap-4 mt-8">
-
-                        <h1>A</h1>
-                        <button class="btn btn-active" onclick="btnSetsAll(eventFncVal)">A1</button>
-                        <button class="btn btn-active btn-sets">A2</button>
-                        <button class="btn btn-active btn-sets">A3</button>
-                        <button class="btn btn-active btn-sets">A4</button>
-                        <h1>B</h1>
-                        <button class="btn btn-active btn-sets">B1</button>
-                        <button class="btn btn-active btn-sets">B2</button>
-                        <button class="btn btn-active btn-sets">B3</button>
-                        <button class="btn btn-active btn-sets">B4</button>
-                        <h1>C</h1>
-                        <button class="btn btn-active btn-sets">C1</button>
-                        <button class="btn btn-active btn-sets">C2</button>
-                        <button class="btn btn-active btn-sets">C3</button>
-                        <button class="btn btn-active btn-sets">C4</button>
-                        <h1>D</h1>
-                        <button class="btn btn-active btn-sets">D1</button>
-                        <button class="btn btn-active btn-sets">D2</button>
-                        <button class="btn btn-active btn-sets">D3</button>
-                        <button class="btn btn-active btn-sets">D4</button>
-                        <h1>E</h1>
-                        <button class="btn btn-active btn-sets">E1</button>
-                        <button class="btn btn-active btn-sets">E2</button>
-                        <button class="btn btn-active btn-sets">E3</button>
-                        <button class="btn btn-active btn-sets">E4</button>
-                        <h1>F</h1>
-                        <button class="btn btn-active btn-sets">F1</button>
-                        <button class="btn btn-active btn-sets">F2</button>
-                        <button class="btn btn-active btn-sets">F3</button>
-                        <button class="btn btn-active btn-sets">F4</button>
-                        <h1>G</h1>
-                        <button class="btn btn-active btn-sets">G1</button>
-                        <button class="btn btn-active btn-sets">G2</button>
-                        <button class="btn btn-active btn-sets">G3</button>
-                        <button class="btn btn-active btn-sets">G4</button>
-                        <h1>H</h1>
-                        <button class="btn btn-active btn-sets">H1</button>
-                        <button class="btn btn-active btn-sets">H2</button>
-                        <button class="btn btn-active btn-sets">H3</button>
-                        <button class="btn btn-active btn-sets">H4</button>
-                        <h1>I</h1>
-                        <button class="btn btn-active btn-sets">I1</button>
-                        <button class="btn btn-active btn-sets">I2</button>
-                        <button class="btn btn-active btn-sets">I3</button>
-                        <button class="btn btn-active btn-sets">I4</button>
-                        <h1>J</h1>
-                        <button class="btn btn-active btn-sets">J1</button>
-                        <button class="btn btn-active btn-sets">J2</button>
-                        <button class="btn btn-active btn-sets">J3</button>
-                        <button class="btn btn-active btn-sets">J4</button>
-
+            <div class="grid-2-1 ">
+                <div class="mr-5 buyTicketOnline-one">
+                    <h1 class=" text-black font-bold text-2xl ">Select Your Seat</h1>
+                    <hr>
+                    <div class="flex justify-between">
+                        <div class=" flex">
+                            <img src="./images/seat-gray.png" alt=""><span class=" text-lg ">Available</span>
+                        </div>
+                        <div class=" flex">
+                            <img src="./images/seat-green-filled.png" alt=""><span
+                                class=" text-lg text-green-400">Selected</span>
+                        </div>
                     </div>
-                </div>
-                <hr id="hr">
-                <div>
-                    <div class=" flex gap-24 text-lg font-bold">
+                    <hr>
 
-                        <h2>Seat<span>0</span></h2>
-                        <h2>Class</h2>
-                        <h2>Price</h2>
-
-                    </div>
-                    <hr id="hr">
-                    <div class=" flex gap-24 text-lg font-bold">
-
-                        <h2>C2</h2>
-                        <h2>Economy</h2>
-                        <h2>550</h2>
-                    </div>
-                    <hr id="hr">
-                    <div class=" flex gap-24 text-lg font-bold">
-                        <h1>Total Price</h1>
-                        <h1>BDT <Span>0</Span></h1>
-                    </div>
                     <div>
-                        <form action="">
-                            <label class="form-control w-full max-w-xs">
-                                <div class="label">
-                                    <span class="label-text">Passenger Name*</span>
-                                </div>
-                                <input type="text" placeholder="Enter your name" required
-                                    class="input input-bordered w-full max-w-xs" />
-                            </label>
-                            <label class="form-control w-full max-w-xs">
-                                <div class="label">
-                                    <span class="label-text">Phone Number*</span>
-                                </div>
-                                <input type="text" placeholder="Phone Number*" required
-                                    class="input input-bordered w-full max-w-xs" />
-                            </label>
-                            <label class="form-control w-full max-w-xs">
-                                <div class="label">
-                                    <span class="label-text">Email ID</span>
-                                </div>
-                                <input type="text" placeholder="Enter your email id"
-                                    class="input input-bordered w-full max-w-xs" />
-                            </label>
-                        </form>
+                        <div class="tickets-options grid grid-cols-5 w-2/4 gap-4 mt-8 w-full">
+
+                            <h1>A</h1>
+                            <button class="btn btn-active btn-sets" onclick="button()">A1</button>
+                            <button class="btn btn-active btn-sets">A2</button>
+                            <button class="btn btn-active btn-sets">A3</button>
+                            <button class="btn btn-active btn-sets">A4</button>
+                            <h1>B</h1>
+                            <button class="btn btn-active btn-sets">B1</button>
+                            <button class="btn btn-active btn-sets">B2</button>
+                            <button class="btn btn-active btn-sets">B3</button>
+                            <button class="btn btn-active btn-sets">B4</button>
+                            <h1>C</h1>
+                            <button class="btn btn-active btn-sets">C1</button>
+                            <button class="btn btn-active btn-sets">C2</button>
+                            <button class="btn btn-active btn-sets">C3</button>
+                            <button class="btn btn-active btn-sets">C4</button>
+                            <h1>D</h1>
+                            <button class="btn btn-active btn-sets">D1</button>
+                            <button class="btn btn-active btn-sets">D2</button>
+                            <button class="btn btn-active btn-sets">D3</button>
+                            <button class="btn btn-active btn-sets">D4</button>
+                            <h1>E</h1>
+                            <button class="btn btn-active btn-sets">E1</button>
+                            <button class="btn btn-active btn-sets">E2</button>
+                            <button class="btn btn-active btn-sets">E3</button>
+                            <button class="btn btn-active btn-sets">E4</button>
+                            <h1>F</h1>
+                            <button class="btn btn-active btn-sets">F1</button>
+                            <button class="btn btn-active btn-sets">F2</button>
+                            <button class="btn btn-active btn-sets">F3</button>
+                            <button class="btn btn-active btn-sets">F4</button>
+                            <h1>G</h1>
+                            <button class="btn btn-active btn-sets">G1</button>
+                            <button class="btn btn-active btn-sets">G2</button>
+                            <button class="btn btn-active btn-sets">G3</button>
+                            <button class="btn btn-active btn-sets">G4</button>
+                            <h1>H</h1>
+                            <button class="btn btn-active btn-sets">H1</button>
+                            <button class="btn btn-active btn-sets">H2</button>
+                            <button class="btn btn-active btn-sets">H3</button>
+                            <button class="btn btn-active btn-sets">H4</button>
+                            <h1>I</h1>
+                            <button class="btn btn-active btn-sets">I1</button>
+                            <button class="btn btn-active btn-sets">I2</button>
+                            <button class="btn btn-active btn-sets">I3</button>
+                            <button class="btn btn-active btn-sets">I4</button>
+                            <h1>J</h1>
+                            <button class="btn btn-active btn-sets">J1</button>
+                            <button class="btn btn-active btn-sets">J2</button>
+                            <button class="btn btn-active btn-sets">J3</button>
+                            <button class="btn btn-active btn-sets">J4</button>
+
+                        </div>
                     </div>
+
+
                 </div>
 
+                <div class="m-5">
+                    <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
+
+                    <div class="ml-5">
+                        <div class=" flex gap-24 text-lg font-bold">
+
+                            <h2>Seat<span>0</span></h2>
+                            <h2>Class</h2>
+                            <h2>Price</h2>
+
+                        </div>
+                        <hr id="hr">
+                        <div class=" flex gap-24 text-lg font-bold" id="all-sets-buy">
+
+
+                        </div>
+                        <hr id="hr">
+                        <div class=" flex gap-48 text-lg font-bold">
+                            <h1 class=" mt-3">Total Price</h1>
+                            <h1 class=" mt-3">BDT <Span id="total-prize">0</Span></h1>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Have any copupon?"
+                                class="input input-bordered w-full max-w-xs" /><button class=" btn btn-success mt-4"
+                                disabled id="cupon-btn">Success</button>
+                        </div>
+                        <div class=" flex gap-48 mt-9">
+                            <div>
+                                <h1 class=" text-xl font-bold">Grand Total</h1>
+                            </div>
+                            <div>
+                                <h1 class=" text-xl font-bold mb-4">BDT <span>0</span></h1>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="">
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Passenger Name*</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter your name" required
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Phone Number*</span>
+                                    </div>
+                                    <input type="text" placeholder="Phone Number*" required
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Email ID</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter your email id"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <button
+                                    class="btn btn-success mt-8 w-80 ml-20 font-bold text-xl from-stone-50">Next</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -367,7 +391,7 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/5b6c81beaa.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
