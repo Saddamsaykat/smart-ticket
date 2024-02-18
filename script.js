@@ -1,23 +1,30 @@
-// const busSets = document.getElementsByClassName("btn-sets")
-// for (const busSet of busSets) {
-//     busSet.addEventListener("click", function (event) {
-//         busSet.style.backgroundColor = "green";
-//         busSet.style.fontSize = "20px";
-//         busSet.style.color = "White"
-//         allSetsBuy.appendChild(event.innerText);
-
-
-//         const economy = document.createElement("p");
-//         economy.innerText = "Economy";
-//         const price = document.createElement("p");
-//         price.innerText = "550";
-//         const allSetsBuy = document.getElementById("all-sets-buy");
-//         allSetsBuy.appendChild(economy);
-//         allSetsBuy.appendChild(price);
-
-//     })
-// }
+let numOfClick = 0;
 
 function button(event) {
-    console.log("Hello");
+
+    numOfClick = numOfClick + 1;
+
+    const seatCount = document.getElementById("seat-count");
+    seatCount.innerText = numOfClick;
+
+    const clickButton = event.target;
+    const buttonText = clickButton.innerText;
+    clickButton.style.backgroundColor = "green";
+    clickButton.style.fontSize = "20px";
+    clickButton.style.color = "white";
+    const classSets = document.createElement("p");
+    classSets.innerText = "Economy";
+
+    const price = document.createElement("p");
+    price.innerText = "550";
+
+    const buttonTextParagraph = document.createElement("p");
+    buttonTextParagraph.innerText = buttonText;
+
+    const setsBuy = document.getElementById("all-sets-buy");
+    setsBuy.appendChild(buttonTextParagraph);
+    setsBuy.appendChild(classSets);
+    setsBuy.appendChild(price);
+
+
 }
