@@ -50,7 +50,7 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Bus <img src="./images/bus-icon.png" alt=""></a>
+                <a class="btn" href="#bus-route">Bus <img src="./images/bus-icon.png" alt=""></a>
             </div>
         </div>
 
@@ -69,7 +69,8 @@
                             <h1 class="mb-5 text-4xl font-bold">Hater Ticket</h1>
                             <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                                 exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <button class="btn btn-success">Buy Tickets</button>
+                            <button class="btn btn-success" id="btn-transtion"> <a href="#buyTicketOnline">Buy
+                                    Tickets</a></button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +145,7 @@
             </div>
         </section>
         <!-- section three bus ticket prize list -->
-        <section class="section-three">
+        <section class="section-three" id="bus-route">
             <div class="ticket-name">
                 <h1>Sohoz Ticket</h1>
                 <p>From online booking systems to GPS tracking, the company prioritizes convenience and reliability.</p>
@@ -201,10 +202,14 @@
             </div>
         </section>
         <!-- seat plan -->
-        <section>
+        <section id="buyTicketOnline">
 
-            <div>
+            <div class=" flex justify-between">
                 <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
+
+                <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
+
+
             </div>
             <hr>
             <div class=" flex justify-between">
@@ -217,60 +222,110 @@
                 </div>
             </div>
             <hr>
-            <div class=" flex">
-                <!-- <div>
-                    <button class="btn btn-active btn-sets"> <img src="./images/Vector.png" alt=""></button>
-                </div> -->
+            <div class="">
 
-                <div class=" grid grid-cols-4 w-2/4 gap-8 mt-8">
-
-
-                    <button class="btn btn-active btn-sets">A1</button>
-                    <button class="btn btn-active btn-sets">A2</button>
-                    <button class="btn btn-active btn-sets">A3</button>
-                    <button class="btn btn-active btn-sets">A4</button>
-                    <button class="btn btn-active btn-sets">B1</button>
-                    <button class="btn btn-active btn-sets">B2</button>
-                    <button class="btn btn-active btn-sets">B3</button>
-                    <button class="btn btn-active btn-sets">B4</button>
-                    <button class="btn btn-active btn-sets">C1</button>
-                    <button class="btn btn-active btn-sets">C2</button>
-                    <button class="btn btn-active btn-sets">C3</button>
-                    <button class="btn btn-active btn-sets">C4</button>
-                    <button class="btn btn-active btn-sets">D1</button>
-                    <button class="btn btn-active btn-sets">D2</button>
-                    <button class="btn btn-active btn-sets">D3</button>
-                    <button class="btn btn-active btn-sets">D4</button>
-                    <button class="btn btn-active btn-sets">E1</button>
-                    <button class="btn btn-active btn-sets">E2</button>
-                    <button class="btn btn-active btn-sets">E3</button>
-                    <button class="btn btn-active btn-sets">E4</button>
-                    <button class="btn btn-active btn-sets">F1</button>
-                    <button class="btn btn-active btn-sets">F2</button>
-                    <button class="btn btn-active btn-sets">F3</button>
-                    <button class="btn btn-active btn-sets">F4</button>
-                    <button class="btn btn-active btn-sets">G1</button>
-                    <button class="btn btn-active btn-sets">G2</button>
-                    <button class="btn btn-active btn-sets">G3</button>
-                    <button class="btn btn-active btn-sets">G4</button>
-                    <button class="btn btn-active btn-sets">H1</button>
-                    <button class="btn btn-active btn-sets">H2</button>
-                    <button class="btn btn-active btn-sets">H3</button>
-                    <button class="btn btn-active btn-sets">H4</button>
-                    <button class="btn btn-active btn-sets">I1</button>
-                    <button class="btn btn-active btn-sets">I2</button>
-                    <button class="btn btn-active btn-sets">I3</button>
-                    <button class="btn btn-active btn-sets">I4</button>
-                    <button class="btn btn-active btn-sets">J1</button>
-                    <button class="btn btn-active btn-sets">J2</button>
-                    <button class="btn btn-active btn-sets">J3</button>
-                    <button class="btn btn-active btn-sets">J4</button>
-
-                </div>
-                <hr>
                 <div>
-                    <h1 class=" text-black font-bold text-2xl">Select Your Seat</h1>
+                    <div class=" grid grid-cols-5 w-2/4 gap-4 mt-8">
 
+                        <h1>A</h1>
+                        <button class="btn btn-active" onclick="btnSetsAll(eventFncVal)">A1</button>
+                        <button class="btn btn-active btn-sets">A2</button>
+                        <button class="btn btn-active btn-sets">A3</button>
+                        <button class="btn btn-active btn-sets">A4</button>
+                        <h1>B</h1>
+                        <button class="btn btn-active btn-sets">B1</button>
+                        <button class="btn btn-active btn-sets">B2</button>
+                        <button class="btn btn-active btn-sets">B3</button>
+                        <button class="btn btn-active btn-sets">B4</button>
+                        <h1>C</h1>
+                        <button class="btn btn-active btn-sets">C1</button>
+                        <button class="btn btn-active btn-sets">C2</button>
+                        <button class="btn btn-active btn-sets">C3</button>
+                        <button class="btn btn-active btn-sets">C4</button>
+                        <h1>D</h1>
+                        <button class="btn btn-active btn-sets">D1</button>
+                        <button class="btn btn-active btn-sets">D2</button>
+                        <button class="btn btn-active btn-sets">D3</button>
+                        <button class="btn btn-active btn-sets">D4</button>
+                        <h1>E</h1>
+                        <button class="btn btn-active btn-sets">E1</button>
+                        <button class="btn btn-active btn-sets">E2</button>
+                        <button class="btn btn-active btn-sets">E3</button>
+                        <button class="btn btn-active btn-sets">E4</button>
+                        <h1>F</h1>
+                        <button class="btn btn-active btn-sets">F1</button>
+                        <button class="btn btn-active btn-sets">F2</button>
+                        <button class="btn btn-active btn-sets">F3</button>
+                        <button class="btn btn-active btn-sets">F4</button>
+                        <h1>G</h1>
+                        <button class="btn btn-active btn-sets">G1</button>
+                        <button class="btn btn-active btn-sets">G2</button>
+                        <button class="btn btn-active btn-sets">G3</button>
+                        <button class="btn btn-active btn-sets">G4</button>
+                        <h1>H</h1>
+                        <button class="btn btn-active btn-sets">H1</button>
+                        <button class="btn btn-active btn-sets">H2</button>
+                        <button class="btn btn-active btn-sets">H3</button>
+                        <button class="btn btn-active btn-sets">H4</button>
+                        <h1>I</h1>
+                        <button class="btn btn-active btn-sets">I1</button>
+                        <button class="btn btn-active btn-sets">I2</button>
+                        <button class="btn btn-active btn-sets">I3</button>
+                        <button class="btn btn-active btn-sets">I4</button>
+                        <h1>J</h1>
+                        <button class="btn btn-active btn-sets">J1</button>
+                        <button class="btn btn-active btn-sets">J2</button>
+                        <button class="btn btn-active btn-sets">J3</button>
+                        <button class="btn btn-active btn-sets">J4</button>
+
+                    </div>
+                </div>
+                <hr id="hr">
+                <div>
+                    <div class=" flex gap-24 text-lg font-bold">
+
+                        <h2>Seat<span>0</span></h2>
+                        <h2>Class</h2>
+                        <h2>Price</h2>
+
+                    </div>
+                    <hr id="hr">
+                    <div class=" flex gap-24 text-lg font-bold">
+
+                        <h2>C2</h2>
+                        <h2>Economy</h2>
+                        <h2>550</h2>
+                    </div>
+                    <hr id="hr">
+                    <div class=" flex gap-24 text-lg font-bold">
+                        <h1>Total Price</h1>
+                        <h1>BDT <Span>0</Span></h1>
+                    </div>
+                    <div>
+                        <form action="">
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">Passenger Name*</span>
+                                </div>
+                                <input type="text" placeholder="Enter your name" required
+                                    class="input input-bordered w-full max-w-xs" />
+                            </label>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">Phone Number*</span>
+                                </div>
+                                <input type="text" placeholder="Phone Number*" required
+                                    class="input input-bordered w-full max-w-xs" />
+                            </label>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">Email ID</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email id"
+                                    class="input input-bordered w-full max-w-xs" />
+                            </label>
+                        </form>
+                    </div>
                 </div>
 
             </div>

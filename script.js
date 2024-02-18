@@ -4,13 +4,13 @@ for (const busSet of busSets) {
         busSet.style.backgroundColor = "green";
         busSet.style.fontSize = "20px";
         busSet.style.color = "White"
+        console.log(busSet.innerText);
 
-        const childNodes = event.target.parentNode.childNodes
-        for (const childNode of childNodes) {
-            if (childNode.nodeType === 1) {
-                console.log(childNode.innerText);
-            }
-        }
 
     })
+}
+
+function btnSetsAll(eventFncVal) {
+    const dataSet = eventFncVal.innerText
+    console.log(dataSet);
 }

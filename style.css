@@ -4,6 +4,10 @@
     border-radius: 0%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* nav bar */
 
 
@@ -146,7 +150,7 @@
 
 .route-div {
     background-color: #f7f8f8;
-    /* max-width: 40%; */
+
     padding: 10px;
 }
 
@@ -154,6 +158,11 @@
 
     border: none;
     padding: 5px;
+}
+
+/* seat pal */
+#hr {
+    border: 2px dashed black;
 }
 
 /* footer */
