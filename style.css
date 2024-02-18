@@ -5,80 +5,23 @@
 }
 
 /* nav bar */
-.nav-bar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3%;
-}
 
-.middle-ul {
-    display: flex;
-    justify-content: space-between;
 
-    align-items: center;
-    list-style: none;
-    gap: 10%;
-}
+/* banner */
+#bannner {}
 
-.bus-icon-name img {
-    max-width: 30px;
-    color: palegreen;
-}
 
-.bus-icon-name a {
-    text-align: center;
-    gap: 20px;
-    border: 1px solid palegreen;
-    padding: 10px;
-    border-radius: 10px;
-
-}
-
-.bus-icon-name a {
-    color: palegreen;
-    text-decoration: none;
-    font-weight: 700;
-    margin-right: 10px;
-}
-
-/* section-one */
-.banner {
-    background-image: url(./images/banner.png);
-    background-repeat: no-repeat;
-    text-align: center;
-    align-items: center;
-    margin-top: 4%;
-    margin-left: 10%;
-    width: fit-content;
-}
-
-.banner-first-name {
-    font-size: 64px;
-    color: white;
-    font-weight: 700;
-    position: relative;
-    top: 50px;
-}
-
-.banner p {
-    max-width: fit-content;
-}
-
-.banner button {
-    padding: 1%;
-    background-color: #1dd100;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-
-    top: 10px;
-
-}
 
 .all-item-line {
     display: flex;
     gap: 2%;
+
+    position: absolute;
+    top: 105%;
+    left: 30%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -92,22 +35,53 @@
 }
 
 /* section two */
-.offer {
+.best-offer {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.offer-one {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
     background-color: #ffbf0f;
-    /* padding: 2%; */
+    padding: 0 10px;
     border-radius: 15px;
-    /* height: 40%; */
-    max-width: 50%;
+    height: 50%;
+    width: 30%;
+
+
+}
+
+.offer-text h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.offer-text p {
+    font-weight: 600;
+
+}
+
+.offer-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: #F78C9C;
+    height: 50%;
+    width: 30%;
+
+    border-radius: 15px;
+
 
 }
 
 .cupon-devider {
-    /* position: relative;
-    right: 10%; */
+
     height: 100%;
 }
 
@@ -115,6 +89,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 /* section 3 */
@@ -176,8 +151,7 @@
 }
 
 .sets-img {
-    align-items: center;
-    justify-content: center;
+
     border: none;
     padding: 5px;
 }
