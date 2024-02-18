@@ -27,4 +27,9 @@ function button(event) {
     setsBuy.appendChild(price);
 
 
+    const setsPrizeRate = 550;
+    sumValue = numOfClick * setsPrizeRate;
+    const ticketPrizeBDT = document.getElementById("total-prize");
+    ticketPrizeBDT.innerText = sumValue;
+
 }
