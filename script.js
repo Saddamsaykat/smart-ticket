@@ -5,7 +5,12 @@ for (const busSet of busSets) {
         busSet.style.fontSize = "20px";
         busSet.style.color = "White"
 
-        const seatName = event.target.parentNode.childNodes[1].innerText
-        console.log(seatName)
+        const childNodes = event.target.parentNode.childNodes
+        for (const childNode of childNodes) {
+            if (childNode.nodeType === 1) {
+                console.log(childNode.innerText);
+            }
+        }
+
     })
 }
