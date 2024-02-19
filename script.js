@@ -72,7 +72,8 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         totalGrand.innerText = discountValue;
 
     }
-    document.getElementById("cupon-btn").setAttribute("disabled", true);
+    document.getElementById("cupon-btn").setAttribute("hidden", true);
+    document.getElementById("text-area").setAttribute("hidden", true);
 })
 
 // modal
