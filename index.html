@@ -106,8 +106,8 @@
         <section>
             <h1 class="best-offer">Best Offers for you</h1>
 
-            <div class="offer-parent">
-                <div class="offer-one">
+            <div class="offer-parent mt-10">
+                <div class="offer-one w-96">
 
                     <div class="offer-text">
                         <h1>15% OFF</h1>
@@ -124,10 +124,10 @@
                     </div>
 
                 </div>
-                <div class="offer-two">
+                <div class="offer-two w-96">
 
                     <div class="offer-text">
-                        <h1>15% OFF</h1>
+                        <h1>20% OFF</h1>
                         <p>on your next purchase</p>
                         <p>use by january 2024</p>
                     </div>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="offer-text">
 
-                        <h1>NEW15</h1>
+                        <h1>Couple 20</h1>
                         <p>coupon Code</p>
 
                     </div>
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class=" flex">
                                     <img src="./images/seat-green-filled.png" alt="">
-                                    <h1>40 <span>Seets Left</span></h1>
+                                    <h1> <span id="total-sets">40 </span><span>Seets Left</span></h1>
                                 </div>
                             </div>
                             <div class=" bg-slate-200 rounded-xl p-7">
@@ -299,7 +299,8 @@
                     <div class="ml-5">
                         <div class=" flex gap-24 text-lg font-bold">
 
-                            <h2>Seat<span id="seat-count" class=" bg-lime-500 text-white ml-14 rounded-xl"></span></h2>
+                            <h2>Seat<span id="seat-count" class=" bg-lime-500 text-white ml-1 rounded-xl"></span>
+                            </h2>
                             <h2>Class</h2>
                             <h2>Price</h2>
 
@@ -316,15 +317,15 @@
                         </div>
                         <div>
                             <input type="text" placeholder="Have any copupon?"
-                                class="input input-bordered w-full max-w-xs" /><button class=" btn btn-success mt-4"
-                                id="cupon-btn">Success</button>
+                                class="input input-bordered w-full max-w-xs" id="text-area" /><button
+                                class=" btn btn-success mt-4" id="cupon-btn">Success</button>
                         </div>
                         <div class=" flex gap-48 mt-9">
                             <div>
                                 <h1 class=" text-xl font-bold">Grand Total</h1>
                             </div>
                             <div>
-                                <h1 class=" text-lg font-bold mb-4 ml-7">BDT <span>0</span></h1>
+                                <h1 class=" text-lg font-bold mb-4 ml-7">BDT <span id="grand-total">0</span></h1>
                             </div>
                         </div>
                         <div>
@@ -334,11 +335,11 @@
                                         <span class="label-text">Passenger Name*</span>
                                     </div>
                                     <input type="text" placeholder="Enter your name" required
-                                        class="input input-bordered w-full max-w-xs" />
+                                        class="input input-bordered w-full max-w-xs" id="passenger" />
                                 </label>
                                 <label class="form-control w-full max-w-xs">
                                     <div class="label">
-                                        <span class="label-text">Phone Number*</span>
+                                        <span class="label-text" id="phone">Phone Number*</span>
                                     </div>
                                     <input type="text" placeholder="Phone Number*" required
                                         class="input input-bordered w-full max-w-xs" />
@@ -350,13 +351,38 @@
                                     <input type="text" placeholder="Enter your email id"
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
-                                <button
-                                    class="btn btn-success mt-8 w-80 ml-20 font-bold text-xl from-stone-50">Next</button>
+                                <!-- modal section -->
+
+                                <button id="next-btn" class="btn btn-success mt-4 w-80 ml-20
+                                " onclick="my_modal_5.showModal()" disabled>Next</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                    <div class="modal-box text-center items-center">
+                                        <img class="ml-44" src="./images/success.png" alt="">
+                                        <h1 class=" font-bold text-4xl text-green-400">Success</h1>
+                                        <h3 class="font-bold text-lg">Thank you for Booking Our Bus Seats.
+
+                                            We are working hard to find the best service and deals for you.</h3>
+                                        <p class="py-4">Shortly you will find a confirmation in your email</p>
+
+
+                                        <button class="btn btn-success mt-4 w-64 ml-44" id="btn-close">Continue</button>
+                                    </div>
+                                </dialog>
                             </form>
                         </div>
                     </div>
+
+
+                    </form>
                 </div>
             </div>
+
+        </section>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
         </section>
     </main>
     <footer>
@@ -393,6 +419,9 @@
         </div>
 
     </footer>
+
+
+
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
