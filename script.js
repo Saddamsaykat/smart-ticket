@@ -65,6 +65,7 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
 
+
     } else if (cuponCode == "Couple 20") {
         const totalGrand = document.getElementById("grand-total")
         const baseValue = parseInt(totalGrand.innerText);
