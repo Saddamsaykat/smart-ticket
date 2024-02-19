@@ -4,11 +4,13 @@ let numOfClick = 0;
 function button(event) {
 
     numOfClick = numOfClick + 1;
+    if (numOfClick > 4) {
+        alert("One Person Can Only buying 4 Tickets (Only)")
+        return
+    }
     const dec = document.getElementById("total-sets");
     const sumSets = parseInt(dec.innerText) - 1;
     dec.innerText = sumSets;
-
-
 
     const seatCount = document.getElementById("seat-count");
     seatCount.innerText = numOfClick;
@@ -27,10 +29,7 @@ function button(event) {
 
     const buttonTextParagraph = document.createElement("p");
     buttonTextParagraph.innerText = buttonText;
-    if (numOfClick > 4) {
-        alert("One Person Can Only buying 4 Tickets (Only)")
-        return
-    }
+
     clickButton.style.backgroundColor = "green";
     clickButton.style.fontSize = "20px";
     clickButton.style.color = "white";
@@ -65,7 +64,6 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
 
-
     } else if (cuponCode == "Couple 20") {
         const totalGrand = document.getElementById("grand-total")
         const baseValue = parseInt(totalGrand.innerText);
@@ -74,26 +72,34 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         totalGrand.innerText = discountValue;
 
     }
-
+    document.getElementById("cupon-btn").setAttribute("disabled", true);
 })
 
 // modal
-const nextBtn = document.getElementById("next-btn");
-const passengerInput = document.getElementById("passenger");
-const phoneInput = document.getElementById("phone")
-
-passengerInput.addEventListener('input', function () {
-    if (passengerInput.value.trim() !== '') {
-        nextBtn.disabled = false;
-    } else {
-        nextBtn.disabled = true;
-    }
-});
-
 
 
 document.getElementById("btn-close").addEventListener("click", function () {
     document.getElementById("my_modal_5").style.display = "none";
 })
 
-//if click on Passanger name input then enable next btn
+const nextBtn = document.getElementById("next-btn");
+const passengerInput = document.getElementById("passenger");
+const phoneInput = document.getElementById("phone");
+const eMail = document.getElementById("E-mail");
+
+
+function checkInputs() {
+    const passengerValue = passengerInput.value;
+    const phoneValue = phoneInput.value;
+    const emailValue = eMail.value;
+
+    if (passengerValue !== '' && phoneValue !== '' && emailValue !== '') {
+        nextBtn.disabled = false;
+    } else {
+        nextBtn.disabled = true;
+    }
+}
+
+passengerInput.addEventListener('input', checkInputs);
+phoneInput.addEventListener('input', checkInputs);
+eMail.addEventListener('input', checkInputs);
