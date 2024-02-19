@@ -34,6 +34,9 @@ function button(event) {
     clickButton.style.backgroundColor = "green";
     clickButton.style.fontSize = "20px";
     clickButton.style.color = "white";
+
+
+
     const setsBuy = document.getElementById("all-sets-buy");
     setsBuy.appendChild(buttonTextParagraph);
     setsBuy.appendChild(classSets);
@@ -61,15 +64,16 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         const discount = baseValue * 0.15;
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
-        console.log(discountValue);
+
     } else if (cuponCode == "Couple 20") {
         const totalGrand = document.getElementById("grand-total")
         const baseValue = parseInt(totalGrand.innerText);
         const discount = baseValue * 0.15;
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
-        console.log(discountValue);
+
     }
+
 })
 
 // modal
