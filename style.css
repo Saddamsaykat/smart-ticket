@@ -8,15 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
-/* nav bar */
-
-
 /* banner */
 #bannner {
     margin-top: 2%;
 }
-
-
 
 .all-item-line {
     display: flex;
