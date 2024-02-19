@@ -79,8 +79,10 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
 
 
 document.getElementById("btn-close").addEventListener("click", function () {
-    document.getElementById("my_modal_5").style.display = "none";
+    window.location.reload();
+
 })
+
 
 const nextBtn = document.getElementById("next-btn");
 const passengerInput = document.getElementById("passenger");
