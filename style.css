@@ -12,20 +12,23 @@ html {
 
 
 /* banner */
-#bannner {}
+#bannner {
+    margin-top: 2%;
+}
 
 
 
 .all-item-line {
     display: flex;
-    gap: 2%;
+    gap: 5%;
 
     position: absolute;
     top: 105%;
-    left: 30%;
+    left: 25%;
 
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -36,12 +39,13 @@ html {
     border-bottom: 4px solid #1dd100;
     padding: 1%;
     border-radius: 10px;
+
 }
 
 /* section two */
 .best-offer {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 15%;
     font-size: 40px;
     font-weight: 700;
 }
@@ -188,7 +192,7 @@ button {
     justify-content: space-around;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: 030712;
     margin-top: 5%;
 }
 

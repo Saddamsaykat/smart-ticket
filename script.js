@@ -81,17 +81,18 @@ const nextBtn = document.getElementById("next-btn");
 const passengerInput = document.getElementById("passenger");
 const phoneInput = document.getElementById("phone")
 
-function enableButton() {
-    if (passengerInput.value !== "" && phoneInput.value !== "") {
-        nextBtn.removeAttribute("disabled");
+passengerInput.addEventListener('input', function () {
+    if (passengerInput.value.trim() !== '') {
+        nextBtn.disabled = false;
     } else {
-        nextBtn.removeAttribute("disabled", true);
+        nextBtn.disabled = true;
     }
-}
-passengerInput.addEventListener("input", enableButton)
-phoneInput.addEventListener("input", enableButton)
+});
+
 
 
 document.getElementById("btn-close").addEventListener("click", function () {
     document.getElementById("my_modal_5").style.display = "none";
 })
+
+//if click on Passanger name input then enable next btn
