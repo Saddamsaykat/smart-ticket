@@ -58,7 +58,7 @@ function button(event) {
 
 document.getElementById("cupon-btn").addEventListener("click", function lessValue() {
     const cuponCode = document.getElementById("text-area").value;
-    if (cuponCode == "new15") {
+    if (cuponCode == "NEW15") {
         const totalGrand = document.getElementById("grand-total")
         const baseValue = parseInt(totalGrand.innerText);
         const discount = baseValue * 0.15;
