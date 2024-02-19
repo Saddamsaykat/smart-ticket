@@ -1,6 +1,5 @@
 let numOfClick = 0;
 
-
 function button(event) {
 
     numOfClick = numOfClick + 1;
@@ -17,9 +16,8 @@ function button(event) {
 
     const clickButton = event.target;
     const buttonText = clickButton.innerText;
-    // button color change
 
-
+    // Create Element For Sets Count
 
     const classSets = document.createElement("p");
     classSets.innerText = "Economy";
@@ -29,6 +27,8 @@ function button(event) {
 
     const buttonTextParagraph = document.createElement("p");
     buttonTextParagraph.innerText = buttonText;
+
+    // button color change
 
     clickButton.style.backgroundColor = "green";
     clickButton.style.fontSize = "20px";
@@ -41,6 +41,7 @@ function button(event) {
     setsBuy.appendChild(classSets);
     setsBuy.appendChild(price);
 
+    // sets Prize sum
 
     const setsPrizeRate = 550;
     sumValue = numOfClick * setsPrizeRate;
@@ -63,6 +64,8 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         const discount = baseValue * 0.15;
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
+        document.getElementById("cupon-btn").setAttribute("hidden", true);
+        document.getElementById("text-area").setAttribute("hidden", true);
 
     } else if (cuponCode == "Couple 20") {
         const totalGrand = document.getElementById("grand-total")
@@ -70,20 +73,14 @@ document.getElementById("cupon-btn").addEventListener("click", function lessValu
         const discount = baseValue * 0.20;
         const discountValue = baseValue - discount;
         totalGrand.innerText = discountValue;
+        document.getElementById("cupon-btn").setAttribute("hidden", true);
+        document.getElementById("text-area").setAttribute("hidden", true);
 
     }
-    document.getElementById("cupon-btn").setAttribute("hidden", true);
-    document.getElementById("text-area").setAttribute("hidden", true);
-})
-
-// modal
-
-
-document.getElementById("btn-close").addEventListener("click", function () {
-    window.location.reload();
 
 })
 
+// form for modal button
 
 const nextBtn = document.getElementById("next-btn");
 const passengerInput = document.getElementById("passenger");
@@ -106,3 +103,12 @@ function checkInputs() {
 passengerInput.addEventListener('input', checkInputs);
 phoneInput.addEventListener('input', checkInputs);
 eMail.addEventListener('input', checkInputs);
+
+
+// modal
+
+
+document.getElementById("btn-close").addEventListener("click", function () {
+    window.location.reload();
+
+})
